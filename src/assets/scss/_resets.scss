@@ -1,0 +1,56 @@
+@font-face {
+  font-family: IBMPlexSansBold;
+  src: url(../fonts/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSansSemiBold;
+  src: url(../fonts/IBMPlexSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSansRegular;
+  src: url(../fonts/IBMPlexSans-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  font-size: 1rem;
+  height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: IBMPlexSansRegular;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
