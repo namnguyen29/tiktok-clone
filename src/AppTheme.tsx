@@ -40,7 +40,11 @@ export const themeBreakpoints = {
 
 export const muiTheme = createTheme({
   typography: {
-    fontFamily: fonts.ibmPlexSansRegular,
+    fontFamily: [
+      fonts.ibmPlexSansRegular,
+      fonts.ibmPlexSansBold,
+      fonts.ibmPlexSansSemiBold,
+    ].join(","),
   },
   zIndex: zIndex,
   breakpoints: {

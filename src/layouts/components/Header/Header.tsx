@@ -37,14 +37,18 @@ export const Header: FC = () => {
         <Box className="right-menu">
           <Button
             startIcon={<Add />}
-            sx={{ fontFamily: fonts.ibmPlexSansBold }}
+            sx={{ fontFamily: fonts.ibmPlexSansSemiBold, fontSize: "1rem" }}
             color="secondary"
             variant="outlined"
           >
             Tải lên
           </Button>
           <Button
-            sx={{ marginLeft: "1em", fontFamily: fonts.ibmPlexSansBold }}
+            sx={{
+              marginLeft: "1em",
+              fontFamily: fonts.ibmPlexSansSemiBold,
+              fontSize: "1rem",
+            }}
             variant="contained"
           >
             Đăng nhập

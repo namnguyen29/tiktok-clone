@@ -5,7 +5,9 @@
       "pages/*": ["src/pages/*"],
       "assets/*": ["src/assets/*"],
       "routes/*": ["src/routes/*"],
-      "layouts/*": ["src/layouts/*"]
+      "layouts/*": ["src/layouts/*"],
+      "common/*": ["src/common/*"],
+      "locales/*": ["src/locales/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
