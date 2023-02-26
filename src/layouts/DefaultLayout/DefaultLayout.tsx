@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 import { Header } from "layouts/components/Header";
 import { Sidebar } from "layouts/components/Sidebar";
@@ -7,14 +8,16 @@ export type DefaultLayoutProps = {
   children: ReactNode;
 };
 
+export const Main = styled.main``;
+
 export const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <Box className="app-container">
+      <Main className="app-container">
         <Sidebar />
         <Box className="app-content">{children}</Box>
-      </Box>
+      </Main>
     </>
   );
 };

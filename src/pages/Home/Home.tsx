@@ -1,27 +1,41 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Button } from "common/components/Button";
+import { TextInput } from "common/components/TextInput";
 import { FC } from "react";
-import { fonts } from "../../AppTheme";
 
 export const Home: FC = () => {
   return (
-    <Box>
-      <Button
+    <div style={{ height: "5000px" }}>
+      <TextInput
+        styles="primary"
+        type="text"
+        placeholder="Primary ..."
+        onChange={() => undefined}
         sx={{
-          fontFamily: fonts.ibmPlexSansBold,
-          textTransform: "none",
+          marginBottom: "1em",
         }}
-        variant="outlined"
-      >
-        Dang nhap
-      </Button>
-      <Typography
+      />
+      <br />
+      <TextInput
+        styles="apple"
+        type="text"
+        placeholder="Apple ..."
+        onChange={() => undefined}
         sx={{
-          textTransform: "capitalize",
+          marginBottom: "1em",
         }}
-      >
-        Hello Guy
-      </Typography>
-      <p>Test please </p>
-    </Box>
+      />
+      <br />
+      <TextInput
+        styles="secondary"
+        type="text"
+        placeholder="Secondary ..."
+        onChange={() => undefined}
+        sx={{
+          marginBottom: "1em",
+        }}
+      />
+      <br />
+      <Button color="secondary" type="submit" label="Click" variant="contained" />
+    </div>
   );
 };
